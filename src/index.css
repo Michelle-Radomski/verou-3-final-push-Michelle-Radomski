@@ -31,14 +31,16 @@ code {
 }
 
 .navbar-logo {
-  color: antiquewhite;
+  display: flex;
   justify-self: start;
   align-items: center;
   margin-left: 20px;
   cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
-  display: flex;
+}
+
+.navbar-logo img {
+  width: 150px;
+  height: 100%;
 }
 
 .fa-tree {
