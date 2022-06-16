@@ -163,3 +163,22 @@ code {
     height: 500px;
   }
 }
+
+/******************* BUTTON *********************/
+.button {
+  color: #AA0000;
+  background-color: #111;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid #312e2e;
+}
+
+.button:hover {
+  color: antiquewhite;
+  background-color: rgba(17, 17, 17, 0.919);
+  transition: all 0.35s linear;
+}
