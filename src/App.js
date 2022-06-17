@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Home from "./components/pages/Home";
+import Weapons from "./components/pages/Weapons";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
                 <Navbar />
                 <Routes>
                     <Route path="/" element={<Home />} />
+                    <Route path="/weapons" element={<Weapons />} />
                 </Routes>
             </Router>
         </>
