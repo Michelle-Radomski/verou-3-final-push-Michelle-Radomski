@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: antiquewhite;
 }
 
 code {
@@ -15,7 +16,6 @@ code {
 /*************** NAVBAR **************/
 .navbar {
   background-color: #242424;
-  color:antiquewhite;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,18 +59,16 @@ code {
   align-items: center;
   list-style: none;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 63px;
   right: -100%;
-  opacity: 1;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in-out;
 }
 
 .nav-menu.active {
   right: 0;
-  opacity: 1;
-  transition: all 0.5s ease;
-  z-index: 1;
+  transition: all 0.5s ease-in-out;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -148,14 +146,22 @@ code {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .platforms {
   width: 80%;
+  position: absolute;
 }
 
 .logo {
   width: 60%;
+  position: absolute;
+  top: 40px;
+}
+
+.vines {
+  width: 100%;
 }
 
 @media screen and (min-width: 640px) {
@@ -175,6 +181,9 @@ code {
   cursor: pointer;
   outline: none;
   border: 2px solid #312e2e;
+  position: absolute;
+  bottom: 30px;
+  z-index: 1;
 }
 
 .button:hover {
