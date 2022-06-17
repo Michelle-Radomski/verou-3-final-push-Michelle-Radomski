@@ -191,3 +191,29 @@ code {
   background-color: rgba(17, 17, 17, 0.919);
   transition: all 0.35s linear;
 }
+
+/****************** HOMEPAGE **********************/
+main:before {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  
+  display: block;
+  background-image: url("./images/dysmantle-wallpaper.jpg");
+  background-size: cover;
+  width: 120%;
+  left: -10%;
+  height: 100vh;
+  
+  -webkit-filter: blur(50px);
+  -moz-filter: blur(50px);
+  -o-filter: blur(50px);
+  -ms-filter: blur(50px);
+  filter: blur(50px);
+}
+.homepage-info-container {
+  background-color: #431D17;
+  padding: 5px 10px;
+  width: 80%;
+  margin: 10px auto;
+}
