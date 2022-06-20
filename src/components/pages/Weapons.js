@@ -1,4 +1,5 @@
 import React from "react";
+import Cards from "../Cards";
 
 function Weapons() {
     return (
@@ -23,6 +24,7 @@ function Weapons() {
 
             <section className="info-container">
                 <h1>Weapon List</h1>
+                <Cards />
             </section>
         </main>
     );
