@@ -1,12 +1,11 @@
 import React from "react";
 import CardItem from "./CardItem";
-import level0 from "./Level0";
-import level1 from "./Level1";
+import weapons from "./Weapons";
 
 function Cards() {
     return (
         <>
-            {level0.map((weapon) => {
+            {weapons.map((weapon) => {
                 return <CardItem weapon={weapon} />;
             })}
         </>
