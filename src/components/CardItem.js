@@ -1,24 +1,35 @@
-import React from 'react';
+import {React, useState} from 'react';
 
 function CardItem({weapon}) {
+    const [weaponInfo, setWeaponInfo] = useState(
+        weapon.levels.map((level) => {
+            if(level.level === 0) {
+            return (
+                <>
+                {level.damage ? <li>Damage: {level.damage}</li> : ""}
+                {level.powerAttackDamage ? <li>Power Attack Damage: {level.powerAttackDamage}</li> : ""}
+                {level.criticalHitDamage ? <li>Critical Hit Damage: {level.criticalHitDamage}</li> : ""}
+                {level.knockbackStrength ? <li>Knockback Strength: {level.knockbackStrength}</li> : ""}
+                {level.extraTargets ? <li>Extra Targets: {level.extraTargets}</li> : ""}
+                {level.meleeDamage ? <li>Melee Damage: {level.meleeDamage}</li> : ""}
+                {level.uses ? <li>Uses: {level.uses}</li> : ""}
+                {level.stunChance ? <li>Stun Chance: {level.stunChance}</li> : ""}
+                {level.hitPoints ? <li>Hit Points: {level.hitPoints}</li> : ""}
+                </>
+            );
+            }
+        })
+    )
         return (
         <article>
             <div>
-                <img src="/" alt="/" />
+                <img src={weapon.src} alt={weapon.alt} />
             </div>
             <div>
                 <h3>{weapon.title}</h3>
                 <p>{weapon.description}</p>
                 <ul>
-                    <li>Damage: {weapon.damage}</li>
-                    {weapon.powerAttackDamage ? <li>Power Attack Damage: {weapon.powerAttackDamage}</li> : ""}
-                    {weapon.criticalHitDamage ? <li>Critical Hit Damage: {weapon.criticalHitDamage}</li> : ""}
-                    {weapon.knockbackStrength ? <li>Knockback Strength: {weapon.knockbackStrength}</li> : ""}
-                    {weapon.extraTargets ? <li>Extra Targets: {weapon.extraTargets}</li> : ""}
-                    {weapon.meleeDamage ? <li>Melee Damage: {weapon.meleeDamage}</li> : ""}
-                    {weapon.uses ? <li>Uses: {weapon.uses}</li> : ""}
-                    {weapon.stunChance ? <li>Stun Chance: {weapon.stunChance}</li> : ""}
-                    {weapon.hitPoints ? <li>Hit Points: {weapon.hitPoints}</li> : ""}
+                {weaponInfo}
                 </ul>
             </div>
         </article>
