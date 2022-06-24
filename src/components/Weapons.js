@@ -9,7 +9,7 @@ import riotShield from "../images/riot-shield.jpg";
 import khopesh from "../images/khopesh.jpg";
 import powerFist from "../images/power-fist.jpg";
 
-export default [
+const weapons = [
     {
         src: crowbar,
         alt: "Crowbar.",
@@ -399,3 +399,5 @@ export default [
         },
     },
 ];
+
+export default weapons;
