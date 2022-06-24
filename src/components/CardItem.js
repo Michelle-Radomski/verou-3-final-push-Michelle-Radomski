@@ -44,13 +44,13 @@ function CardItem({weapon}) {
 
         return (
         <article className="weapon-info-container">
-            <div>
+            <div className="card-image-container">
                 <img src={weapon.src} alt={weapon.alt} className="card-image" />
             </div>
-            <div>
+            <div className="weapon-info-content">
                 <h3>{weapon.title}</h3>
                 <p>{weapon.description}</p>
-                <ul>
+                <ul className="weapon-info-list">
                 {weaponInfo.damage ? <li>Damage: {weaponInfo.damage}</li> : ""}
                 {weaponInfo.powerAttackDamage ? <li>Power Attack Damage: {weaponInfo.powerAttackDamage}</li> : ""}
                 {weaponInfo.criticalHitDamage ? <li>Critical Hit Damage: {weaponInfo.criticalHitDamage}</li> : ""}
@@ -61,12 +61,12 @@ function CardItem({weapon}) {
                 {weaponInfo.stunChance ? <li>Stun Chance: {weaponInfo.stunChance}</li> : ""}
                 {weaponInfo.hitPoints ? <li>Hit Points: {weaponInfo.hitPoints}</li> : ""}
                 </ul>
-                <Button className="level-button" text="level 0" onClick={clearState} />
-                <Button className="level-button" text="level 1" onClick={upgradeLevel1} />
-                <Button className="level-button" text="level 2" onClick={upgradeLevel2} />
-                <Button className="level-button" text="level 3" onClick={upgradeLevel3} />
-                <Button className="level-button" text="level 4" onClick={upgradeLevel4} />
-                <Button className="level-button" text="level 5" onClick={upgradeLevel5} />
+                <Button className="level-button button" text="level 0" onClick={clearState} />
+                <Button className="level-button button" text="level 1" onClick={upgradeLevel1} />
+                <Button className="level-button button" text="level 2" onClick={upgradeLevel2} />
+                <Button className="level-button button" text="level 3" onClick={upgradeLevel3} />
+                <Button className="level-button button" text="level 4" onClick={upgradeLevel4} />
+                <Button className="level-button button" text="level 5" onClick={upgradeLevel5} />
             </div>
         </article>
         )
