@@ -87,47 +87,6 @@ body {
   cursor: pointer;
 }
 
-@media screen and (min-width: 640px) {
-  .navbar-container {
-      justify-content: start;
-  }
-
-  .navbar-logo {
-      margin-left: 20px;
-      justify-content: start;
-  }
-
-  .nav-menu {
-      justify-content: end;
-      margin-right: 2rem;
-      top: 0;
-      right: 0;
-      position: relative;
-      flex-direction: row;
-  }
-
-  .nav-item {
-      width: max-content;
-  }
-
-  .nav-links {
-      padding: 0.5rem;
-      display: flex;
-  }
-
-  .nav-links:hover {
-      border-bottom: 2px solid #AA0000;
-      transition: all 0.2s ease-out;
-      color: #AA0000;
-      font-weight: bold;
-      background-color: #242424;
-  }
-
-  .menu-icon {
-      display: none;
-  }
-}
-
 /******************* HERO *******************/
 .hero-container {
   background-image: url("./images/dysmantle-wallpaper.jpg");
@@ -154,12 +113,6 @@ body {
 
 .vines {
   width: 100%;
-}
-
-@media screen and (min-width: 640px) {
-  .hero-container {
-    height: 500px;
-  }
 }
 
 /******************* BUTTON *********************/
@@ -229,10 +182,10 @@ main:before {
 }
 
 .weapon-info-container {
-  max-width: 250px;
+  width: 250px;
   margin: 10px 5px;
   background-color: #33130e;
-  padding: 10px 0;
+  padding: 10px;
 }
 
 .weapon-info-content {
@@ -244,6 +197,19 @@ main:before {
 .weapon-info-content > p {
   margin: 0 auto;
   width: 90%;
+}
+
+.title {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.title:hover {
+  color: #AA0000;
+  transition: all 0.5s ease;
 }
 
 .weapon-info-list {
@@ -262,4 +228,58 @@ main:before {
 
 .level-button:focus {
   color: antiquewhite;
+}
+
+@media screen and (min-width: 768px) {
+  /**************** NAVABAR ****************/
+  .navbar-container {
+    justify-content: start;
+  }
+
+  .navbar-logo {
+    margin-left: 20px;
+    justify-content: start;
+  }
+
+  .nav-menu {
+    justify-content: end;
+    margin-right: 2rem;
+    top: 0;
+    right: 0;
+    position: relative;
+    flex-direction: row;
+  }
+
+  .nav-item {
+    width: max-content;
+  }
+
+  .nav-links {
+    padding: 0.5rem;
+    display: flex;
+  }
+
+  .nav-links:hover {
+    border-bottom: 2px solid #AA0000;
+    transition: all 0.2s ease-out;
+    color: #AA0000;
+    font-weight: bold;
+    background-color: #242424;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  /***************** HERO ******************/
+  .hero-container {
+    height: 500px;
+  }
+
+  /**************** CARDS *****************/
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
 }
