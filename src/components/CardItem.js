@@ -3,24 +3,7 @@ import Button from './Button';
 
 function CardItem({weapon}) {
     const initialState = (
-        weapon.levels.map((level) => {
-            console.log(level);
-            if(level.level === 0) {
-            return (
-                <>
-                {level.damage ? <li>Damage: {level.damage}</li> : ""}
-                {level.powerAttackDamage ? <li>Power Attack Damage: {level.powerAttackDamage}</li> : ""}
-                {level.criticalHitDamage ? <li>Critical Hit Damage: {level.criticalHitDamage}</li> : ""}
-                {level.knockbackStrength ? <li>Knockback Strength: {level.knockbackStrength}</li> : ""}
-                {level.extraTargets ? <li>Extra Targets: {level.extraTargets}</li> : ""}
-                {level.meleeDamage ? <li>Melee Damage: {level.meleeDamage}</li> : ""}
-                {level.uses ? <li>Uses: {level.uses}</li> : ""}
-                {level.stunChance ? <li>Stun Chance: {level.stunChance}</li> : ""}
-                {level.hitPoints ? <li>Hit Points: {level.hitPoints}</li> : ""}
-                </>
-            );
-            }
-        })
+        weapon.level0
     )
 
     const [weaponInfo, setWeaponInfo] = useState(initialState)
@@ -31,111 +14,31 @@ function CardItem({weapon}) {
 
     const upgradeLevel1 = () => {
         setWeaponInfo(
-    weapon.levels.map((level) => {
-            if(level.level === 1) {
-            return (
-                <>
-                {level.damage ? <li>Damage: {level.damage}</li> : ""}
-                {level.powerAttackDamage ? <li>Power Attack Damage: {level.powerAttackDamage}</li> : ""}
-                {level.criticalHitDamage ? <li>Critical Hit Damage: {level.criticalHitDamage}</li> : ""}
-                {level.knockbackStrength ? <li>Knockback Strength: {level.knockbackStrength}</li> : ""}
-                {level.extraTargets ? <li>Extra Targets: {level.extraTargets}</li> : ""}
-                {level.meleeDamage ? <li>Melee Damage: {level.meleeDamage}</li> : ""}
-                {level.uses ? <li>Uses: {level.uses}</li> : ""}
-                {level.stunChance ? <li>Stun Chance: {level.stunChance}</li> : ""}
-                {level.hitPoints ? <li>Hit Points: {level.hitPoints}</li> : ""}
-                </>
-            );
-            }
-        })
+            weapon.level1
         )
     }
 
     const upgradeLevel2 = () => {
         setWeaponInfo(
-    weapon.levels.map((level) => {
-            if(level.level === 2) {
-            return (
-                <>
-                {level.damage ? <li>Damage: {level.damage}</li> : ""}
-                {level.powerAttackDamage ? <li>Power Attack Damage: {level.powerAttackDamage}</li> : ""}
-                {level.criticalHitDamage ? <li>Critical Hit Damage: {level.criticalHitDamage}</li> : ""}
-                {level.knockbackStrength ? <li>Knockback Strength: {level.knockbackStrength}</li> : ""}
-                {level.extraTargets ? <li>Extra Targets: {level.extraTargets}</li> : ""}
-                {level.meleeDamage ? <li>Melee Damage: {level.meleeDamage}</li> : ""}
-                {level.uses ? <li>Uses: {level.uses}</li> : ""}
-                {level.stunChance ? <li>Stun Chance: {level.stunChance}</li> : ""}
-                {level.hitPoints ? <li>Hit Points: {level.hitPoints}</li> : ""}
-                </>
-            );
-            }
-        })
+            weapon.level2
         )
     }
 
     const upgradeLevel3 = () => {
         setWeaponInfo(
-    weapon.levels.map((level) => {
-            if(level.level === 3) {
-            return (
-                <>
-                {level.damage ? <li>Damage: {level.damage}</li> : ""}
-                {level.powerAttackDamage ? <li>Power Attack Damage: {level.powerAttackDamage}</li> : ""}
-                {level.criticalHitDamage ? <li>Critical Hit Damage: {level.criticalHitDamage}</li> : ""}
-                {level.knockbackStrength ? <li>Knockback Strength: {level.knockbackStrength}</li> : ""}
-                {level.extraTargets ? <li>Extra Targets: {level.extraTargets}</li> : ""}
-                {level.meleeDamage ? <li>Melee Damage: {level.meleeDamage}</li> : ""}
-                {level.uses ? <li>Uses: {level.uses}</li> : ""}
-                {level.stunChance ? <li>Stun Chance: {level.stunChance}</li> : ""}
-                {level.hitPoints ? <li>Hit Points: {level.hitPoints}</li> : ""}
-                </>
-            );
-            }
-        })
+            weapon.level3
         )
     }
 
     const upgradeLevel4 = () => {
         setWeaponInfo(
-    weapon.levels.map((level) => {
-            if(level.level === 4) {
-            return (
-                <>
-                {level.damage ? <li>Damage: {level.damage}</li> : ""}
-                {level.powerAttackDamage ? <li>Power Attack Damage: {level.powerAttackDamage}</li> : ""}
-                {level.criticalHitDamage ? <li>Critical Hit Damage: {level.criticalHitDamage}</li> : ""}
-                {level.knockbackStrength ? <li>Knockback Strength: {level.knockbackStrength}</li> : ""}
-                {level.extraTargets ? <li>Extra Targets: {level.extraTargets}</li> : ""}
-                {level.meleeDamage ? <li>Melee Damage: {level.meleeDamage}</li> : ""}
-                {level.uses ? <li>Uses: {level.uses}</li> : ""}
-                {level.stunChance ? <li>Stun Chance: {level.stunChance}</li> : ""}
-                {level.hitPoints ? <li>Hit Points: {level.hitPoints}</li> : ""}
-                </>
-            );
-            }
-        })
+            weapon.level4
         )
     }
 
     const upgradeLevel5 = () => {
         setWeaponInfo(
-    weapon.levels.map((level) => {
-            if(level.level === 5) {
-            return (
-                <>
-                {level.damage ? <li>Damage: {level.damage}</li> : ""}
-                {level.powerAttackDamage ? <li>Power Attack Damage: {level.powerAttackDamage}</li> : ""}
-                {level.criticalHitDamage ? <li>Critical Hit Damage: {level.criticalHitDamage}</li> : ""}
-                {level.knockbackStrength ? <li>Knockback Strength: {level.knockbackStrength}</li> : ""}
-                {level.extraTargets ? <li>Extra Targets: {level.extraTargets}</li> : ""}
-                {level.meleeDamage ? <li>Melee Damage: {level.meleeDamage}</li> : ""}
-                {level.uses ? <li>Uses: {level.uses}</li> : ""}
-                {level.stunChance ? <li>Stun Chance: {level.stunChance}</li> : ""}
-                {level.hitPoints ? <li>Hit Points: {level.hitPoints}</li> : ""}
-                </>
-            );
-            }
-        })
+            weapon.level5
         )
     }
 
@@ -148,7 +51,15 @@ function CardItem({weapon}) {
                 <h3>{weapon.title}</h3>
                 <p>{weapon.description}</p>
                 <ul>
-                {weaponInfo}
+                {weaponInfo.damage ? <li>Damage: {weaponInfo.damage}</li> : ""}
+                {weaponInfo.powerAttackDamage ? <li>Power Attack Damage: {weaponInfo.powerAttackDamage}</li> : ""}
+                {weaponInfo.criticalHitDamage ? <li>Critical Hit Damage: {weaponInfo.criticalHitDamage}</li> : ""}
+                {weaponInfo.knockbackStrength ? <li>Knockback Strength: {weaponInfo.knockbackStrength}</li> : ""}
+                {weaponInfo.extraTargets ? <li>Extra Targets: {weaponInfo.extraTargets}</li> : ""}
+                {weaponInfo.meleeDamage ? <li>Melee Damage: {weaponInfo.meleeDamage}</li> : ""}
+                {weaponInfo.uses ? <li>Uses: {weaponInfo.uses}</li> : ""}
+                {weaponInfo.stunChance ? <li>Stun Chance: {weaponInfo.stunChance}</li> : ""}
+                {weaponInfo.hitPoints ? <li>Hit Points: {weaponInfo.hitPoints}</li> : ""}
                 </ul>
                 <Button className="level-button" text="level 0" onClick={clearState} />
                 <Button className="level-button" text="level 1" onClick={upgradeLevel1} />
