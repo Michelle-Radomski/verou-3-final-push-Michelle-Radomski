@@ -1,13 +1,13 @@
-import crowbar from "../images/crowbar.jpg";
-import machete from "../images/machete.jpg";
-import baseballBat from "../images/baseball-bat.jpg";
-import katana from "../images/katana.jpg";
-import axe from "../images/axe.jpg";
-import huntingRifle from "../images/hunting-rifle.jpg";
-import sledgehammer from "../images/sledgehammer.jpg";
-import riotShield from "../images/riot-shield.jpg";
-import khopesh from "../images/khopesh.jpg";
-import powerFist from "../images/power-fist.jpg";
+import crowbar from "../images/crowbar.png";
+import machete from "../images/machete.png";
+import baseballBat from "../images/baseball-bat.png";
+import katana from "../images/katana.png";
+import axe from "../images/axe.png";
+import huntingRifle from "../images/hunting-rifle.png";
+import sledgehammer from "../images/sledgehammer.png";
+import riotShield from "../images/riot-shield.png";
+import khopesh from "../images/khopesh.png";
+import powerFist from "../images/power-fist.png";
 
 const weapons = [
     {
